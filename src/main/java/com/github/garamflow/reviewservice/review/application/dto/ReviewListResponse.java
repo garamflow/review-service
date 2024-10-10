@@ -4,7 +4,7 @@ import java.util.List;
 
 public record ReviewListResponse(
         Integer totalCount,
-        Float averageScore,
+        Double score,
         Long cursor,
         List<ReviewResponse> reviews
 ) {

@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 public record ReviewResponse(
         Long id,
         Long userId,
-        Float score,
+        Integer score,
         String content,
         String imageUrl,
         LocalDateTime createdAt

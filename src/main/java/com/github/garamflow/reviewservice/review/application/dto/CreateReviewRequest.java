@@ -2,7 +2,7 @@ package com.github.garamflow.reviewservice.review.application.dto;
 
 public record CreateReviewRequest(
         Long userId,
-        Float score,
+        Integer score,
         String content
 ){
     public CreateReviewRequest {

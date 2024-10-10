@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Service
 public class ReviewDomainService {
-    public Review addReview(Product product, User user, String content, Float score, String imageUrl) {
+    public Review addReview(Product product, User user, String content, Integer score, String imageUrl) {
         return new Review.Builder(product, user, content, score, LocalDateTime.now())
                 .imageUrl(imageUrl)
                 .build();

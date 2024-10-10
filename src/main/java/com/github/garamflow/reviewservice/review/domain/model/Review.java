@@ -35,7 +35,7 @@ public class Review {
     private String content;
 
     @Column(nullable = false)
-    private Float score;
+    private Integer score;
 
     private String imageUrl;
 
@@ -55,12 +55,12 @@ public class Review {
         private final Product product;
         private final User user;
         private final String content;
-        private final Float score;
+        private final Integer score;
         private final LocalDateTime createdAt;
 
         private String imageUrl;
 
-        public Builder(Product product, User user, String content, Float score, LocalDateTime createdAt) {
+        public Builder(Product product, User user, String content, Integer score, LocalDateTime createdAt) {
             this.product = product;
             this.user = user;
             this.content = content;

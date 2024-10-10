@@ -20,7 +20,7 @@ public class ProductDataInitializer implements CommandLineRunner {
             for (int i = 1; i <= 100; i++) {
                 Product product = Product.builder()
                         .reviewCount(0) // 초기 리뷰 개수는 0
-                        .score(0.0f)    // 초기 평균 점수는 0.0
+                        .score(0.0)    // 초기 평균 점수는 0.0
                         .build();
 
                 productRepository.save(product);

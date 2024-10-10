@@ -19,17 +19,17 @@ public class Product {
     private Long id;
 
     private Integer reviewCount;
-    private Float score;
+    private Double score;
 
 
 
     @Builder
-    public Product(Integer reviewCount, Float score) {
+    public Product(Integer reviewCount, Double score) {
         this.reviewCount = reviewCount;
         this.score = score;
     }
 
-    public void updateReviewCountAndScore(Float newScore) {
+    public void updateReviewCountAndScore(Integer newScore) {
         this.reviewCount += 1;
         this.score = ((this.score * (this.reviewCount - 1)) + newScore) / this.reviewCount;
     }
